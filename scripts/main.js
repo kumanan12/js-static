@@ -18,3 +18,15 @@ console.log(getUserInfo());
   console.log(JSON.stringify(text));
   document.querySelector('#name').textContent = text;
 }())
+function getById(id){
+  return document.getElementById(id);
+}
+function hide(id) {
+  getById(id).style.display = "none";
+}
+
+function show(id) {
+  getById(id).removeAttribute("display");
+}
+
+hide("authenticatedMenu");
