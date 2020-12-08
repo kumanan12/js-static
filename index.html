@@ -12,7 +12,7 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <nav id="anonymousMenu" class="navbar navbar-expand-lg navbar-dark bg-primary">
         <a class="navbar-brand" href="#">Conference Management System</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01"
             aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
@@ -20,7 +20,23 @@
         </button>
 
         <div class="collapse navbar-collapse" id="navbarColor01">
-            <ul id="authenticatedMenu" class="navbar-nav mr-auto">
+            <ul  class="navbar-nav mr-auto">
+               
+            </ul>
+
+            <a id="anonymousMenu" href="/.auth/login/google?post_login_redirect_uri=index.html"
+                class="btn btn-secondary float-end">Login</a>
+        </div>
+    </nav>
+    <nav id="authenticatedMenu" class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <a class="navbar-brand" href="#">Conference Management System</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01"
+            aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarColor01">
+            <ul  class="navbar-nav mr-auto">
                 <li class="nav-item active">
                     <a class="nav-link" href="#">Home
                         <span class="sr-only">(current)</span>
@@ -47,8 +63,9 @@
                     </div>
                 </li>
             </ul>
-            
-           <a id="anonymousMenu" href="/.auth/login/google?post_login_redirect_uri=index.html" class="btn btn-secondary">Login</a>
+
+            <a  href="/.auth/login/google?post_login_redirect_uri=index.html"
+                class="btn btn-secondary float-end">Login</a>
         </div>
     </nav>
 
@@ -58,7 +75,10 @@
     <script src="scripts/bootstrap.bundle.min.js"></script>
     <script src="scripts/bs_custom.js"></script>
 
-     <!-- app scripts -->
+    <!-- app scripts -->
+    <script src="scripts/util.js"></script>
+    <script src="scripts/user.js"></script>
+    <script src="scripts/main.js"></script>
 
 </body>
 
