@@ -1,16 +1,13 @@
 function init() {
   getUserInfo().then((data) => {
     if (data && data.userDetails) {
-      hide("anonymousMenu");
-      show("authenticatedMenu") 
+      getById("menu").innerHTML = authenticatedMenuTemplate;
     }else{
-      hide("authenticatedMenu");
-      show("anonymousMenu") 
+      getById("menu").innerHTML = anonymousMenuTemplate; 
     }
   }).catch((err) =>{
     console.error(err);
-    hide("authenticatedMenu");
-    show("anonymousMenu") 
+    getById("menu").innerHTML = anonymousMenuTemplate; 
   })
 }
 
