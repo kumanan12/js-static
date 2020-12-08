@@ -6,6 +6,9 @@
     "start": "func start",
     "test": "echo \"No tests yet...\""
   },
-  "dependencies": {},
+  "dependencies": {
+    "firebase-admin": "^9.4.1",
+    "mongodb": "^3.6.3"
+  },
   "devDependencies": {}
 }

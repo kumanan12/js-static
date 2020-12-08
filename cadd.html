@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>CMS</title>
+</head>
+
+<body>
+    <div id="menu">
+
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h1 class="text-primary">Create a new conference</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-md-6">
+                <form id="form">
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="name" placeholder="Name of the conference" name="name" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="description" class="form-label">Description</label>
+                        <input type="text" class="form-control" id="description" name ="description"
+                            placeholder="Description of the conference" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="topic" class="form-label">Topic</label>
+                        <input type="text" class="form-control" id="topic" name="topic" placeholder="" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="location" class="form-label">Location</label>
+                        <input type="text" class="form-control" id="location" name="location" placeholder="" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="startDate" class="form-label">Start date</label>
+                        <input type="date" class="form-control" id="startDate" name="startDate" placeholder="" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="endDate" class="form-label">End date</label>
+                        <input type="date" class="form-control" id="endDate" name="endDate" placeholder="" required>
+                        <div class="mb-3 mt-5">
+                            <button type="submit" id="btnSubmit"  class="btn btn-primary" btn-lg
+                                btn-block">Submit</button>
+                            <button type="reset" id="btnReset" class="btn btn-secondary" btn-lg
+                                btn-block">Reset</button>
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+        <div id="output">
+
+        </div>
+
+        <!-- Option 1: Bootstrap Bundle with Popper -->
+        <script src="scripts/jquery.min.js"></script>
+        <script src="scripts/bootstrap.bundle.min.js"></script>
+        <script src="scripts/bs_custom.js"></script>
+        <script src="scripts/lodash.min.js"></script>
+
+        <!-- app scripts -->
+        <script src="scripts/dynamic-menu.js"></script>
+        <script src="scripts/util.js"></script>
+        <script src="scripts/user.js"></script>
+        <script src="scripts/main.js"></script>
+
+       
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="/__/firebase/8.1.2/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<!-- Initialize Firebase -->
+<script src="/__/firebase/init.js"></script>
+<script src="scripts/cadd.js"></script>
+
+</body>
+
+</html>
