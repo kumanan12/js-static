@@ -1,4 +1,5 @@
 const url ="http://localhost:3000/posts";
+
 function onSubmitClicked() {
     event.preventDefault();
     var formRef = $("#form");
@@ -37,7 +38,7 @@ function onDataReceived(data) {
     console.log(data);
 }
 
-fetch('http://localhost:3000/posts')
+fetch(url)
     .then(response => response.json())
     .then(data => {
         console.log(data);
