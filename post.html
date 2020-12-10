@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>CMS</title>
+</head>
+
+<body>
+   <div id="menu">
+       
+   </div>
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <h1 class="text-primary">Create a new Post</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 col-md-6">
+            <form id="form" >
+                <div class="mb-3">
+                    <label for="title" class="form-label">Title</label>
+                    <input type="text" class="form-control" id="title" name ="title"
+                        placeholder="" required>
+                </div>
+                <div class="mb-3">
+                    <label for="author" class="form-label">Topic</label>
+                    <input type="text" class="form-control" id="author" name="author" placeholder="" required>
+                </div>
+                <div class="mb-3">
+                    <div class="mb-3 mt-5">
+                        <button type="submit" id="btnSubmit"  class="btn btn-primary" btn-lg
+                            btn-block">Submit</button>
+                        <button type="reset" id="btnReset" class="btn btn-secondary" btn-lg
+                            btn-block">Reset</button>
+                    </div>
+                </div>
+            </form>
+
+        </div>
+    </div>
+</div>
+
+ 
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="scripts/jquery.min.js"></script>
+    <script src="scripts/bootstrap.bundle.min.js"></script>
+    <script src="scripts/bs_custom.js"></script>
+
+    <!-- app scripts -->
+    <script src="scripts/dynamic-menu.js"></script>
+    <script src="post.js"></script>
+    <!-- <script src="scripts/util.js"></script>
+    <script src="scripts/user.js"></script>
+    <script src="scripts/main.js"></script> -->
+
+</body>
+
+</html>

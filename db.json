@@ -1,0 +1,57 @@
+{
+  "posts": [
+    {
+      "id": 1000,
+      "title": "Add conference",
+      "author": "Kumanan"
+    },
+    {
+      "id": "2",
+      "title": "Test",
+      "author": "Test topic"
+    },
+    {
+      "id": "3",
+      "title": "Test For suganthi",
+      "author": "Test topic2"
+    },
+    {
+      "id": 1001
+    },
+    {
+      "id": 1002
+    },
+    {
+      "id": 1003
+    },
+    {
+      "id": 1004
+    },
+    {
+      "title": "Add Test postman",
+      "author": "Kavin",
+      "id": 1005
+    },
+    {
+      "id": 1006
+    },
+    {
+      "id": 1007
+    },
+    {
+      "id": 1008
+    },
+    {
+      "id": 1009
+    },
+    {
+      "title": "New data from browser",
+      "author": "Test topic",
+      "id": 1010
+    }
+  ],
+  "comments": [],
+  "profile": {
+    "name": "typicode"
+  }
+}
